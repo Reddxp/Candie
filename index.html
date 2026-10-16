@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f6" />
+  <title>Little Moments, Forever Memories ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>✧</span><span>♡</span><span>✦</span><span>♡</span>
+  </div>
+
+  <main>
+    <section class="welcome-screen" id="welcomeScreen">
+      <div class="welcome-card">
+        <div class="tiny-label"><span class="sparkle">✧</span> A LITTLE GIFT FOR YOU <span class="sparkle">✧</span></div>
+        <div class="heart-mark" aria-hidden="true">♡</div>
+        <p class="eyebrow">For someone who makes life brighter</p>
+        <h1>Little moments,<br><em>forever memories.</em></h1>
+        <p class="intro">Some people make ordinary days feel special. This little corner of the internet is for the laughs, the memories, and the friendship I’m grateful for.</p>
+        <button class="primary-button" id="openMemories">Open Your memories <span aria-hidden="true">♡</span></button>
+        <p class="signature">MADE BY SULU LULUUUUUU.. ✦</p>
+      </div>
+      <div class="bottom-note">SCROLL LESS, SMILE MORE <span>✧</span></div>
+    </section>
+
+    <section class="memories-section hidden" id="memoriesSection">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Back to top">♡ <span>Your little world</span></a>
+        <button class="music-button" id="musicToggle" aria-pressed="false" title="Play or pause music">
+          <span class="music-icon">♫</span><span id="musicLabel">Play music</span>
+        </button>
+      </header>
+
+      <div class="section-heading">
+        <p class="eyebrow">A collection of little things</p>
+        <h2>Your <em>memory lane</em></h2>
+        <p>Every picture holds a moment. Every moment is part of the story.</p>
+      </div>
+
+      <div class="slideshow-card">
+        <div class="photo-frame">
+          <img id="slideImage" src="photos/photo1.svg" alt="Memory slideshow image" />
+          <div class="photo-overlay"></div>
+          <div class="photo-count" id="photoCount">01 / 04</div>
+          <button class="slide-arrow prev" id="prevButton" aria-label="Previous photo">‹</button>
+          <button class="slide-arrow next" id="nextButton" aria-label="Next photo">›</button>
+          <div class="photo-caption">
+            <span class="caption-kicker">A MOMENT TO KEEP</span>
+            <h3 id="slideTitle">The little things</h3>
+            <p id="slideCaption">The best memories are often the simplest ones.</p>
+          </div>
+        </div>
+        <div class="slideshow-footer">
+          <div class="dots" id="slideDots" aria-label="Choose a photo"></div>
+          <div class="slide-controls">
+            <button class="text-button" id="pauseButton" aria-pressed="false">Ⅱ Pause slideshow</button>
+            <span class="control-divider">·</span>
+            <span class="soft-label">made of memories ♡</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="message-card">
+        <div class="message-icon">✿</div>
+        <p class="eyebrow">A little reminder</p>
+        <h2>I'm glad <em>you're you.</em></h2>
+        <p class="message-text">Thank you for the laughs, the random conversations, and the moments that become memories without us even noticing. No matter how busy life gets, I hope you always remember that you’re appreciated and your friendship means a lot.</p>
+        <div class="divider-heart"><span></span>♡<span></span></div>
+        <p class="message-signoff">Always cheering for you <span>♡</span></p>
+      </section>
+
+      <footer class="footer">
+        <p>MADE BY <strong>GHOST</strong> <span>✦</span></p>
+        <p class="footer-small">A tiny website for memories worth keeping.</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Add your own MP3 file at audio/background.mp3 to enable music. -->
+  <audio id="backgroundMusic" src="audio/background.mp3" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
